@@ -2,6 +2,8 @@
 import React from "react";
 // import { Switch, Route, Redirect, withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
+import { Switch, Route } from "react-router-dom/cjs/react-router-dom.min";
+import { withRouter } from "react-router";
 import Home from "../Home/Home";
 
 const mapStateToProps = state => {
@@ -10,12 +12,25 @@ const mapStateToProps = state => {
     }
 }
 
+
 class Main extends React.Component {
     render() {
         return (
-            <Home test={this.props.test} />
+            <div>
+                <h1>Header</h1>
+                <Switch>
+                    <Route exact path="/">
+                        <Home test={this.props.test} />
+                    </Route>
+                    <Route path="/resume">
+                        <div>Nothin here!</div>
+                    </Route>
+                </Switch>
+                <h1>Footer</h1>
+            </div>
+
         );
     }
 }
     
-export default connect(mapStateToProps)(Main); //withRouter()
+export default withRouter(connect(mapStateToProps)(Main));
