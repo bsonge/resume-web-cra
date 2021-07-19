@@ -9,7 +9,8 @@ Adding any overarching core structure here to keep it all in one place
 .page-wrap {    
     min-height: 100%;
     /* equal to footer height */
-    margin-bottom: -142px; 
+    margin-bottom: -(sl.$footer_height); 
+    background-color: sl.$dark_blue;
 }
 .page-wrap:after, .page-wrap:before {
     content: "";
