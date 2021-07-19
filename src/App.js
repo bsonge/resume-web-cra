@@ -1,6 +1,6 @@
 import React from 'react';
 import Main from './Components/Main/Main'
-import './App.css';
+import './App.scss';
 import { Provider } from 'react-redux';
 import { ConfigureStore } from './redux/configureStore';
 import { BrowserRouter as Router } from 'react-router-dom';

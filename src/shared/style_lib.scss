@@ -1,0 +1,20 @@
+//style-lib
+$dark_blue: #334248;
+$mid_blue: #4f6d7a;
+$light_blue: #c0d6df;
+$dark_white: #eaeaea;
+$light_white: #ffffff;
+$dark_orange: #dd6e42;
+$light_orange: #e38c64;
+$beige: #e8dab2;
+
+:export {
+    darkBlue: $dark_blue;
+    midBlue: $mid_blue;
+    lightBlue: $light_blue;
+    darkWhite: $dark_white;
+    lightWhite: $light_white;
+    darkOrange: $dark_orange;
+    lightOrange: $light_orange;
+    beige: $beige;
+}

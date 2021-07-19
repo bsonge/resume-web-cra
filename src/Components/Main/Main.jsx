@@ -5,6 +5,7 @@ import { connect } from 'react-redux';
 import { Switch, Route } from "react-router-dom/cjs/react-router-dom.min";
 import { withRouter } from "react-router";
 import Home from "../Home/Home";
+import Header from "../Header/Header";
 
 const mapStateToProps = state => {
     return {
@@ -16,18 +17,18 @@ const mapStateToProps = state => {
 class Main extends React.Component {
     render() {
         return (
-            <div>
-                <h1>Header</h1>
+            <React.Fragment>
+                <Header />
                 <Switch>
                     <Route exact path="/">
-                        <Home test={this.props.test} />
+                        <Home test={this.props.test} style={"background: green"}/>
                     </Route>
                     <Route path="/resume">
                         <div>Nothin here!</div>
                     </Route>
                 </Switch>
                 <h1>Footer</h1>
-            </div>
+            </React.Fragment>
 
         );
     }
