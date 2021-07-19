@@ -14,7 +14,7 @@ const Header = (props) => {
     const [isOpen, setIsOpen] = useState(false);
     const toggleNav = () => setIsOpen(!isOpen);
     return(
-        <Navbar>
+        <Navbar className="site-header">
             <NavbarBrand href="/">WhimsyDeep</NavbarBrand>
             <NavbarToggler onClick={toggleNav}/>
             <Collapse isOpen={isOpen}>

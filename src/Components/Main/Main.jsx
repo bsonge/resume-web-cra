@@ -6,6 +6,8 @@ import { Switch, Route } from "react-router-dom/cjs/react-router-dom.min";
 import { withRouter } from "react-router";
 import Home from "../Home/Home";
 import Header from "../Header/Header";
+import Footer from "../Footer/Footer";
+import "./Main.scss";
 
 const mapStateToProps = state => {
     return {
@@ -19,15 +21,17 @@ class Main extends React.Component {
         return (
             <React.Fragment>
                 <Header />
-                <Switch>
-                    <Route exact path="/">
-                        <Home test={this.props.test} style={"background: green"}/>
-                    </Route>
-                    <Route path="/resume">
-                        <div>Nothin here!</div>
-                    </Route>
-                </Switch>
-                <h1>Footer</h1>
+                <div className="page-wrap">
+                    <Switch >
+                        <Route exact path="/">
+                            <Home test={this.props.test} style={"background: green"}/>
+                        </Route>
+                        <Route path="/resume">
+                            <div>Nothin here!</div>
+                        </Route>
+                    </Switch>
+                </div>
+                <Footer />
             </React.Fragment>
 
         );

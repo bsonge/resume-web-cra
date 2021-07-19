@@ -1,4 +1,6 @@
 //style-lib
+
+// Site Color Theme
 $dark_blue: #334248;
 $mid_blue: #4f6d7a;
 $light_blue: #c0d6df;
@@ -7,6 +9,10 @@ $light_white: #ffffff;
 $dark_orange: #dd6e42;
 $light_orange: #e38c64;
 $beige: #e8dab2;
+
+// Heights
+$footer_height: 142px;
+$header_height: 50px;
 
 :export {
     darkBlue: $dark_blue;
@@ -17,4 +23,8 @@ $beige: #e8dab2;
     darkOrange: $dark_orange;
     lightOrange: $light_orange;
     beige: $beige;
+    footer_height:$footer_height;
+    header_height:$header_height; 
+    
+    
 }
