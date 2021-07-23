@@ -1,0 +1,8 @@
+@use "src/shared/style_lib.scss" as sl;
+
+
+.navbar {
+    background: sl.$light_blue;
+    position: absolute;
+    width: 100%;
+}

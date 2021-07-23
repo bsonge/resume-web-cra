@@ -1,0 +1,6 @@
+@use "src/shared/style_lib.scss" as sl;
+
+.site-footer {
+    background-color: sl.$darker_blue;
+    color: sl.$light_white;
+}

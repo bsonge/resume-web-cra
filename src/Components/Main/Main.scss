@@ -1,0 +1,27 @@
+@use "src/shared/style_lib.scss" as sl;
+/*  
+Adding any overarching core structure here to keep it all in one place 
+*/
+
+
+
+/* == Footer (sticky) == */
+.page-wrap {    
+    min-height: 100%;
+    /* equal to footer height */
+    margin-bottom: -(sl.$footer_height); 
+    background-color: sl.$dark_blue;
+}
+.page-wrap:after, .page-wrap:before {
+    content: "";
+    display: block;
+}
+
+/* keep with footer classname */
+.site-footer, .page-wrap:after {
+    height: sl.$footer_height;  /* footer height */
+}
+
+.navbar, .page-wrap:before {
+    height: sl.$header_height;
+}

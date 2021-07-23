@@ -16,11 +16,9 @@ class Home extends React.Component {
 
     render() {
         return (
-            <div>
-                    <h1>Header goes here</h1>
-                    <p><strong>MAIN!! Todo: add router</strong></p>
+            <div className="main-content">
+                    <p><strong>MAIN!!</strong></p>
                     <p> Cool Test Color: { this.returnColor(3) } </p>
-                    <h1>Footer goes here</h1>
             </div>
         )
     }
