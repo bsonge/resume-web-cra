@@ -1,5 +1,5 @@
 # resume-web-cra
-New Resume Website
+# WhimsyDeep
 
 
 Technologies:
