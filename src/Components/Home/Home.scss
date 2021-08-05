@@ -1,5 +1,28 @@
-// $bg-img: url('./Home_Bg_Waves.png');
+@use "src/shared/style_lib.scss" as sl;
 //TODO: add some gosh dang background 
-.main-content {
-    // background: $bg-img;
+
+.homepage-container {
+    background-image: url('../../shared/images/Home_Bg_Waves.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-bottom: calc(-100vh + var(sl.$header_height));
 }
+
+.homepage-container > div{
+    max-width: 1300px;
+    margin:auto;
+    
+}
+
+.main-content { //no good!
+    // min-height: 100vh;
+    // position: absolute;
+    width:100%;
+    
+}
+
+// .bgimg {
+//     background-color:blue;
+//     height:100px;
+//     width:100px;
+// }

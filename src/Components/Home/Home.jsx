@@ -1,4 +1,6 @@
-import React from "react";
+import React, { Fragment } from "react";
+import "./Home.scss";
+// import WAVE_IMG from "../../shared/images/Home_Bg_Waves.png";
 
 /*  expected props:
 test = [{id:int, color: string}]
@@ -16,10 +18,22 @@ class Home extends React.Component {
 
     render() {
         return (
+            <div className="homepage-container">
             <div className="main-content">
                     <p><strong>MAIN!!</strong></p>
+                    <div className="bgimg"></div>
+                    {/* <img src={WAVE_IMG} alt="waves"></img> */}
                     <p> Cool Test Color: { this.returnColor(3) } </p>
             </div>
+            <div className="buttons">
+                <div>Here there be dragons!</div>
+                <div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+            </div>
+
         )
     }
 }

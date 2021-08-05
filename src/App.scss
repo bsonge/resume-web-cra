@@ -1,6 +1,9 @@
+@use "src/shared/style_lib.scss" as sl;
+
 .App {
   text-align: center;
   height: 100%;
+  background-color: sl.$mid_blue;
 }
 
 .App-link {
