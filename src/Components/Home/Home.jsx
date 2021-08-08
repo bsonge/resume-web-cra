@@ -1,6 +1,8 @@
 import React, { Fragment } from "react";
 import "./Home.scss";
-// import WAVE_IMG from "../../shared/images/Home_Bg_Waves.png";
+// import {ReactComponent as WAVE_IMG} from "../../shared/images/Homepage_Divider.svg";
+import WAVE_IMG from "../../shared/images/Homepage_Divider.png";
+import { Link } from 'react-router-dom';
 
 /*  expected props:
 test = [{id:int, color: string}]
@@ -18,21 +20,33 @@ class Home extends React.Component {
 
     render() {
         return (
-            <div className="homepage-container">
-            <div className="main-content">
-                    <p><strong>MAIN!!</strong></p>
-                    <div className="bgimg"></div>
-                    {/* <img src={WAVE_IMG} alt="waves"></img> */}
-                    <p> Cool Test Color: { this.returnColor(3) } </p>
-            </div>
-            <div className="buttons">
-                <div>Here there be dragons!</div>
-                <div>
-                    <div></div>
-                    <div></div>
+            // <div className="homepage-container">
+            <Fragment>
+                <div className="UPPER fllw">
+                    <div className="spacer stdw" />
+                    <div className="title-card">
+                        <div className="title-main"><strong>WhimsyDeep</strong></div>
+                        <div className="tagline">Welcome to my little corner of the internet.</div>
+                    </div>
+                    {/* <p> Cool Test Color: <strong style={{"color": this.returnColor(3)}}>{ this.returnColor(3) }</strong> </p> */}
+                    <div className="spacer stdw" />
+                    <div className="spacer stdw" />
+
                 </div>
-            </div>
-            </div>
+
+                <div className="wave-divider fllw">
+                    <img src={WAVE_IMG} className="wave-divider-img" alt="waves"></img>
+                    {/* <WAVE_IMG className="wave-divider-img" /> */}
+                </div>
+                <div className="LOWER fllw">
+                    <div className="buttons stdw">
+                        <Link to="/resume"> Resume (COMING SOON) </Link>
+                    </div>
+                </div>
+
+            </Fragment>
+
+            // {/* </div> */}
 
         )
     }
