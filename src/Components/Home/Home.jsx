@@ -39,9 +39,11 @@ class Home extends React.Component {
                     {/* <WAVE_IMG className="wave-divider-img" /> */}
                 </div>
                 <div className="LOWER fllw">
+                    <div className="spacer stdw" />
                     <div className="buttons stdw">
                         <Link to="/resume"> Resume (COMING SOON) </Link>
                     </div>
+                    <div className="spacer stdw" />
                 </div>
 
             </Fragment>
