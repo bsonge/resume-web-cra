@@ -1,5 +1,53 @@
-// $bg-img: url('./Home_Bg_Waves.png');
+@use "src/shared/style_lib.scss" as sl;
 //TODO: add some gosh dang background 
-.main-content {
-    // background: $bg-img;
+
+// .homepage-container {
+
+// }
+
+
+.stdw { //standard width
+    max-width: 1300px;
+    margin:auto;
+}
+.fllw { //full width
+    width: 100%;
+}
+
+.UPPER { 
+    background-color: sl.$lighter_blue;
+}
+.LOWER {
+    color: sl.$light_white;
+}
+
+/* inner components  */
+
+.title-card {
+    max-width: 1500px;
+    margin:auto;
+    color: sl.$light_orange;
+    text-align: left;
+    margin-left: 100px;
+}
+.title-card .title-main {
+    font-size: 5em;
+}
+.title-card .tagline {
+    font-size: 2em;
+}
+
+.spacer {
+    min-height: 15vh;
+}
+
+.wave-divider {
+    width: 100%;
+
+}
+
+.wave-divider-img {
+    width: 100%;
+    max-height: 300px;
+    margin-top: -3px;
 }
