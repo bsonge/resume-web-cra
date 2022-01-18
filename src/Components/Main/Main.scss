@@ -12,6 +12,7 @@ Adding any overarching core structure here to keep it all in one place
     /* equal to footer height */
     margin-bottom: -(sl.$footer_height); 
     background-color: sl.$dark_blue;
+    color: sl.$dark_white;
 }
 .page-wrap:after, .page-wrap:before {
     content: "";
@@ -25,4 +26,8 @@ Adding any overarching core structure here to keep it all in one place
 
 .navbar, .page-wrap:before {
     height: sl.$header_height;
+}
+
+.flex {
+    display: flex;
 }

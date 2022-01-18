@@ -21,6 +21,7 @@
     color: sl.$light_white;
 }
 
+
 /* inner components  */
 
 .title-card {
@@ -50,4 +51,44 @@
     width: 100%;
     max-height: 300px;
     margin-top: -3px;
+}
+
+
+/*construction sign */
+
+.construction-wrap { 
+    margin: auto;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    width: 80vw;
+    max-width: 1200px;
+}
+
+.construction-tape {
+    margin: auto;
+    height: 30px;
+    width: 100%;
+    background: repeating-linear-gradient(
+        45deg,
+        black,
+        black 20px,
+        yellow 20px,
+        yellow 40px,
+    );
+}
+.construction-outer {
+    width: 5px;
+    height: 100px;
+    background-color: black;
+}
+
+.construction-inner {
+    height: 100px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.822);
+    color: black;
+}
+.construction-inner>div {
+    margin: auto;
+    padding: 10px;
 }

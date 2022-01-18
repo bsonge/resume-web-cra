@@ -24,10 +24,10 @@ class Main extends React.Component {
                 <div className="page-wrap">
                     <Switch >
                         <Route exact path="/">
-                            <Home test={this.props.test} style={"background: green"}/>
+                            <Home test={this.props.test} />
                         </Route>
                         <Route path="/resume">
-                            <div>Nothin here!</div>
+                            <div>Nothing here yet!</div>
                         </Route>
                     </Switch>
                 </div>
