@@ -8,6 +8,7 @@ import {
     NavItem,
 } from 'reactstrap';
 import { NavLink } from "react-router-dom";
+import { ReactComponent as Logo } from '../../shared/images/logov1.svg';
 import "./Header.scss";
 
 const Header = (props) => {
@@ -15,7 +16,7 @@ const Header = (props) => {
     const toggleNav = () => setIsOpen(!isOpen);
     return(
         <Navbar className="site-header">
-            <NavbarBrand href="/">WhimsyDeep</NavbarBrand>
+            <NavbarBrand href="/"><Logo className="mainLogo"/>WhimsyDeep</NavbarBrand>
             <NavbarToggler onClick={toggleNav}/>
             <Collapse isOpen={isOpen}>
                 <Nav navbar>

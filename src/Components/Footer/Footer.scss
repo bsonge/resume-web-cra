@@ -3,4 +3,17 @@
 .site-footer {
     background-color: sl.$darker_blue;
     color: sl.$light_white;
+    padding: 20px;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    display: flex;
+}
+.sitemap-footer {
+    text-align: left;
+}
+
+.contact-footer{
+    text-align: left;
+    align-self: flex-end;
+    font-size: .8em;
 }
