@@ -1,4 +1,4 @@
-@use "src/shared/style_lib.scss" as sl;
+@use "shared/style_lib.scss" as sl;
 //TODO: add some gosh dang background 
 
 // .homepage-container {
@@ -56,7 +56,7 @@
 
 @media (max-width:900px) {
     .title-card {
-        font-size: 2vw;
+        font-size: 2.5vw;
         text-align: center;
         margin-left: 0px;
         padding-left: 10px;
@@ -90,12 +90,10 @@
 }
 .construction-outer {
     width: 5px;
-    height: 100px;
     background-color: black;
 }
 
 .construction-inner {
-    height: 100px;
     width: 100%;
     background: rgba(255, 255, 255, 0.822);
     color: black;
@@ -103,4 +101,10 @@
 .construction-inner>div {
     margin: auto;
     padding: 10px;
+}
+
+
+
+.buttons {
+    background-color: sl.$light_white;
 }

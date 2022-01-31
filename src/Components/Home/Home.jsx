@@ -1,9 +1,9 @@
 import React, { Fragment } from "react";
 import "./Home.scss";
 // import {ReactComponent as WAVE_IMG} from "../../shared/images/Homepage_Divider.svg";
-import WAVE_IMG from "../../shared/images/Homepage_Divider.png";
+import WAVE_IMG from "shared/images/Homepage_Divider.png";
 import { Link } from 'react-router-dom';
-import { ReactComponent as Logo } from '../../shared/images/logov1.svg';
+// import { ReactComponent as Logo } from 'shared/images/logov1.svg';
 /*  expected props:
 test = [{id:int, color: string}]
 */
@@ -59,6 +59,7 @@ class Home extends React.Component {
                     <div className="spacer stdw" />
                     <div className="buttons stdw">
                         <Link to="/resume"> Resume (COMING SOON) </Link>
+                        <Link to="/practice-zone"> The Practice Zone </Link>
                     </div>
                     <div className="spacer stdw" />
                 </div>

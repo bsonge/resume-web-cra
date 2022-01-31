@@ -8,7 +8,7 @@ import {
     NavItem,
 } from 'reactstrap';
 import { NavLink } from "react-router-dom";
-import { ReactComponent as Logo } from '../../shared/images/logov1.svg';
+import { ReactComponent as Logo } from 'shared/images/logov1.svg';
 import "./Header.scss";
 
 const Header = (props) => {
