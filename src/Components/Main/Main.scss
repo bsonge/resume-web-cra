@@ -1,8 +1,4 @@
 @use "src/shared/style_lib.scss" as sl;
-/*  
-Adding any overarching core structure here to keep it all in one place 
-*/
-
 
 
 /* == Footer (sticky) == */
@@ -26,8 +22,4 @@ Adding any overarching core structure here to keep it all in one place
 
 .navbar, .page-wrap:before {
     height: sl.$header_height;
-}
-
-.flex {
-    display: flex;
 }
