@@ -11,24 +11,17 @@ class PracticeZone extends React.Component {
 
     render() {
         var cards = [
-            {
-                title: "Counter",
-                image: PLACEHOLDER,
-                link: "/practice-zone/p-counter",
-            }, {
-                title: "TODO",
-                image: PLACEHOLDER,
-                link: "/practice-zone/p-todo",
-            }, {
-                title: "Auto Complete",
-                image: PLACEHOLDER,
-                link: "/practice-zone/p-input-auto-complete",
-            },
+            // {
+            //     title: "Counter",
+            //     image: PLACEHOLDER,
+            //     link: "/practice-zone/p-counter",
+            // },
         ];
         return (
             <Fragment>
                 <h2>The Practice Zone</h2>
-                <CardList cards={cards}/>
+                <div>Coming Soon!</div>
+                {/* <CardList cards={cards}/> */}
             </Fragment>
 
             // {/* </div> */}
