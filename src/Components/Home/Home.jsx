@@ -1,12 +1,14 @@
 import React, { Fragment } from "react";
 import "./Home.scss";
-// import {ReactComponent as WAVE_IMG} from "../../shared/images/Homepage_Divider.svg";
 import WAVE_IMG from "shared/images/Homepage_Divider.png";
-import { Link } from 'react-router-dom';
-// import { ReactComponent as Logo } from 'shared/images/logov1.svg';
+import PLACEHOLDER from "shared/images/placeholder/268x180.svg";
+import CardList from "Components/Widgets/CardList/CardList";
 /*  expected props:
 test = [{id:int, color: string}]
 */
+
+
+
 class Home extends React.Component {
     constructor(props) {
         super(props);
@@ -19,6 +21,17 @@ class Home extends React.Component {
     }
 
     render() {
+        var cards = [
+            {
+                title: "Resume (COMING SOON)",
+                image: PLACEHOLDER,
+                link: "/resume",
+            }, {
+                title: "The Practice Zone",
+                image: PLACEHOLDER,
+                link: "/practice-zone",
+            }, 
+        ];
         return (
             // <div className="homepage-container">
             <Fragment>
@@ -58,8 +71,7 @@ class Home extends React.Component {
                 <div className="LOWER fllw">
                     <div className="spacer stdw" />
                     <div className="buttons stdw">
-                        <Link to="/resume"> Resume (COMING SOON) </Link>
-                        <Link to="/practice-zone"> The Practice Zone </Link>
+                        <CardList cards={cards}/>
                     </div>
                     <div className="spacer stdw" />
                 </div>

@@ -8,8 +8,13 @@ import Home from "Components/Home/Home";
 import Header from "Components/Header/Header";
 import Footer from "Components/Footer/Footer";
 import PracticeZone from "Components/PracticeZone/PracticeZone";
-import { Link } from 'react-router-dom';
+import Counter from "Components/PracticeZone/PracticeItems/Counter/Counter";
+import TODO from "Components/PracticeZone/PracticeItems/TODO/TODO";
+import AutoComplete from "Components/PracticeZone/PracticeItems/AutoComplete/AutoComplete";
+// import AutoBreadcrumb from "Components/Widgets/AutoBreadcrumb/AutoBreadcrumb";
+// import { Link } from 'react-router-dom';
 import "./Main.scss";
+import "shared/style_lib.scss";
 
 const mapStateToProps = state => {
     return {
@@ -24,6 +29,7 @@ class Main extends React.Component {
             <React.Fragment>
                 <Header />
                 <div className="page-wrap">
+                    {/* <AutoBreadcrumb /> */}
                     <Switch >
                         <Route exact path="/">
                             <Home test={this.props.test} />
@@ -36,14 +42,14 @@ class Main extends React.Component {
                         <Route exact path="/practice-zone">
                             <PracticeZone />
                         </Route>
-                        <Route path="/p-counter">
-                            <div>Counter zone!</div>
-                        </Route>p-input-auto-complete
-                        <Route path="/p-todo">
-                            <div>Todo zone!</div>
-                        </Route>p-input-auto-complete
-                        <Route path="/p-input-auto-complete">
-                            <div>Auto Complete zone!</div>
+                        <Route path="/practice-zone/p-counter">
+                            <Counter />
+                        </Route>
+                        <Route path="/practice-zone/p-todo">
+                            <TODO />
+                        </Route>
+                        <Route path="/practice-zone/p-input-auto-complete">
+                            <AutoComplete />
                         </Route>
                     </Switch>
                 </div>

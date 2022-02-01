@@ -36,18 +36,3 @@ $header_height: 3.5em;
 
 
 
-/*  
-Adding any overarching core structure here to keep it all in one place 
-*/
-
-/* == CORE STYLING == */
-.stdw { //standard width
-    max-width: 1300px;
-    margin:auto;
-}
-.fllw { //full width
-    width: 100%;
-}
-.flex {
-    display: flex;
-}

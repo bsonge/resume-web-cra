@@ -1,6 +1,8 @@
 import React, { Fragment } from "react";
 import "./PracticeZone.scss";
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
+import PLACEHOLDER from "shared/images/placeholder/268x180.svg";
+import CardList from "Components/Widgets/CardList/CardList";
 
 class PracticeZone extends React.Component {
     // constructor(props) {
@@ -8,16 +10,25 @@ class PracticeZone extends React.Component {
     // }
 
     render() {
+        var cards = [
+            {
+                title: "Counter",
+                image: PLACEHOLDER,
+                link: "/practice-zone/p-counter",
+            }, {
+                title: "TODO",
+                image: PLACEHOLDER,
+                link: "/practice-zone/p-todo",
+            }, {
+                title: "Auto Complete",
+                image: PLACEHOLDER,
+                link: "/practice-zone/p-input-auto-complete",
+            },
+        ];
         return (
             <Fragment>
                 <h2>The Practice Zone</h2>
-                <div className="text-area stdw">
-                    <ul>
-                        <li><Link to="/p-counter"> Counter </Link></li>
-                        <li><Link to="/p-todo"> Todo </Link></li>
-                        <li><Link to="/p-input-auto-complete"> Counter </Link></li>
-                    </ul>
-                </div>
+                <CardList cards={cards}/>
             </Fragment>
 
             // {/* </div> */}

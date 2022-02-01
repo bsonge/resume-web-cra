@@ -1,0 +1,29 @@
+.clist {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-decoration: none;
+}
+.clist .clist-item {
+    min-width: 200px;
+    min-height: 100px;
+    flex-grow: 3;
+    margin: 3px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+/* animation */
+.anim-zoom-brightness {
+    overflow: hidden;
+}
+.anim-zoom-brightness img {
+    transition: transform 2s, filter 1.5s ease-in-out;
+    transform-origin: center center;
+    filter: brightness(50%);
+}
+.anim-zoom-brightness:hover img {
+    filter: brightness(100%);
+    transform: scale(1.3);
+}

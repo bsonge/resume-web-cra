@@ -11,3 +11,23 @@
 }
 
 
+/*  
+Adding any overarching core structure here to keep it all in one place 
+*/
+
+/* == CORE STYLING == */
+.stdw { //standard width
+  max-width: 1300px;
+  margin:auto;
+  padding: 10px;
+}
+.ltxt { //standard width
+  text-align: left;
+}
+.fllw { //full width
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+}

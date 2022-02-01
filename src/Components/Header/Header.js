@@ -1,4 +1,4 @@
-import { React, useState } from "react";
+import { Fragment, React, useState } from "react";
 import {
     Navbar,
     NavbarBrand,
@@ -15,6 +15,7 @@ const Header = (props) => {
     const [isOpen, setIsOpen] = useState(false);
     const toggleNav = () => setIsOpen(!isOpen);
     return(
+        <Fragment>
         <Navbar className="site-header">
             <NavbarBrand href="/"><Logo className="mainLogo"/>WhimsyDeep</NavbarBrand>
             <NavbarToggler onClick={toggleNav}/>
@@ -26,6 +27,7 @@ const Header = (props) => {
                 </Nav>
             </Collapse>
         </Navbar>
+        </Fragment>
     );
 }
 
