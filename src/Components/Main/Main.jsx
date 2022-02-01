@@ -8,9 +8,6 @@ import Home from "Components/Home/Home";
 import Header from "Components/Header/Header";
 import Footer from "Components/Footer/Footer";
 import PracticeZone from "Components/PracticeZone/PracticeZone";
-import Counter from "Components/PracticeZone/PracticeItems/Counter/Counter";
-import TODO from "Components/PracticeZone/PracticeItems/TODO/TODO";
-import AutoComplete from "Components/PracticeZone/PracticeItems/AutoComplete/AutoComplete";
 // import AutoBreadcrumb from "Components/Widgets/AutoBreadcrumb/AutoBreadcrumb";
 // import { Link } from 'react-router-dom';
 import "./Main.scss";
@@ -42,15 +39,10 @@ class Main extends React.Component {
                         <Route exact path="/practice-zone">
                             <PracticeZone />
                         </Route>
-                        <Route path="/practice-zone/p-counter">
+                        {/* <Route path="/practice-zone/p-counter">
                             <Counter />
-                        </Route>
-                        <Route path="/practice-zone/p-todo">
-                            <TODO />
-                        </Route>
-                        <Route path="/practice-zone/p-input-auto-complete">
-                            <AutoComplete />
-                        </Route>
+                        </Route> */}
+                        
                     </Switch>
                 </div>
                 <Footer />
