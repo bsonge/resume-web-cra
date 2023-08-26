@@ -17,7 +17,7 @@ const Header = (props) => {
     return(
         <Fragment>
         <Navbar className="site-header">
-            <NavbarBrand href="/"><Logo className="mainLogo"/>WhimsyDeep</NavbarBrand>
+            <NavbarBrand href="/"><Logo className="mainLogo"/></NavbarBrand>
             <NavbarToggler onClick={toggleNav}/>
             <Collapse isOpen={isOpen}>
                 <Nav navbar>

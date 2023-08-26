@@ -39,7 +39,7 @@ class Home extends React.Component {
                 {/* <Logo /> */}
                     <div className="spacer stdw" />
                     <div className="title-card">
-                        <div className="title-main"><strong>WhimsyDeep</strong></div>
+                        <div className="title-main"><strong>Brayden Songe</strong></div>
                         <div className="tagline">Welcome to my little corner of the internet.</div>
                     </div>
                     {/* <p> Cool Test Color: <strong style={{"color": this.returnColor(3)}}>{ this.returnColor(3) }</strong> </p> */}
