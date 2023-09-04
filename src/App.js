@@ -2,10 +2,9 @@ import React from 'react';
 import Main from './Components/Main/Main'
 import './App.scss';
 import { Provider } from 'react-redux';
-import { ConfigureStore } from './redux/configureStore';
+import store from 'redux/store';
 import { BrowserRouter as Router } from 'react-router-dom';
 
-const store = ConfigureStore();
 
 class App extends React.Component {
   
