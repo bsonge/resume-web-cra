@@ -9,6 +9,7 @@ import Header from "Components/Header/Header";
 import Footer from "Components/Footer/Footer";
 import PracticeZone from "Components/PracticeZone/PracticeZone";
 import ReduxCounter from "Components/PracticeZone/PracticeItems/ReduxCounter/ReduxCounter";
+import SecretPractice from "Components/PracticeZone/PracticeItems/SecretPractice/SecretPractice";
 // import AutoBreadcrumb from "Components/Widgets/AutoBreadcrumb/AutoBreadcrumb";
 // import { Link } from 'react-router-dom';
 import "./Main.scss";
@@ -42,6 +43,9 @@ class Main extends React.Component {
                         </Route>
                         <Route path="/practice-zone/p-redux-counter">
                             <ReduxCounter />
+                        </Route>
+                        <Route path="/practice-zone/p-secret-practice">
+                            <SecretPractice />
                         </Route>
                         
                     </Switch>
